@@ -28,6 +28,6 @@ public interface RecoveryRoomRepository extends CrudRepository<RecoveryRoom, Str
     @Query("SELECT * FROM RECOVERY_ROOM_TYPE WERE RECOVERY_ROOM_TYPE.NAME LIKE :name% ")
     RecoveryRoomType getRecoveryRoomType(String name);
     
-    @Query("Select * FROM RECOVERY_ROOMS WERE SIZE LOWER THAN :size%")
+    @Query("Select * FROM RECOVERY_ROOMS WERE SIZE > :size%")
     List<RecoveryRoom> findBySizeMoreThan(double size);
 }

@@ -32,6 +32,6 @@ public class RecoveryRoom {
 	
     @Transient
     @OneToMany
-    @JoinColumn(name = "name")
+    @JoinColumn(name = "roomType")
     RecoveryRoomType roomType;
 }
