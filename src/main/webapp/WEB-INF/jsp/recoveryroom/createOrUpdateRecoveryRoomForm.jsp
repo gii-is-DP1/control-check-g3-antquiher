@@ -22,6 +22,8 @@
             <div class="form-group has-feedback">
                 <petclinic:inputField label="Room name" name="name"/>
                 <petclinic:inputField label="Room size in m2" name="size"/>
+                <petclinic:inputField label="Room type name" name="roomType.name"/>
+                <petclinic:inputField label="Room type id" name="roomType.id"/>
                 <petclinic:checkboxField label="Secure room?" name="secure"/>
                 <div class="control-group">
                     <petclinic:selectField name="type" label="Room type " names="${types}" size="5"/>
