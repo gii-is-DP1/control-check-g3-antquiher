@@ -11,12 +11,15 @@ public class RecoveryRoomTypeFormatter implements Formatter<RecoveryRoomType>{
 
     @Override
     public String print(RecoveryRoomType object, Locale locale) {
-        return null;
+    	
+        return object.getName();
     }
 
     @Override
     public RecoveryRoomType parse(String text, Locale locale) throws ParseException {
-        return null;
+    	RecoveryRoomType r = new RecoveryRoomType();
+    	r.setName(text);
+        return r;
     }
     
 }
